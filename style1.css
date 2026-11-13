@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+ 
+html {
+  scroll-behavior: smooth;
+}
+ 
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #203047;
+  background: #f5f7fb;
+}
+ 
+.site-header {
+  background: #142b4a;
+  color: #ffffff;
+}
+ 
+.header-inner {
+  width: min(100% - 2rem, 1100px);
+  margin: 0 auto;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+ 
+.brand {
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.15rem;
+}
+ 
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+ 
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+ 
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+ 
+.hero {
+  padding: 4.5rem 1rem;
+  text-align: center;
+  background: #e4eefc;
+}
+ 
+.eyebrow {
+  color: #2459a6;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+ 
+.hero h1 {
+  margin: 0.4rem 0;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.15;
+}
+ 
+.hero-text {
+  max-width: 620px;
+  margin: 1rem auto 1.5rem;
+}
+ 
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.2rem;
+  color: #ffffff;
+  background: #1559b7;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  font-weight: 700;
+}
+ 
+.button:hover,
+.button:focus {
+  background: #0d3d80;
+}
+ 
+.activities {
+  width: min(100% - 2rem, 1100px);
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+ 
+.activities h2,
+.section-intro {
+  text-align: center;
+}
+ 
+.activities h2 {
+  margin-bottom: 0.25rem;
+}
+ 
+.section-intro {
+  margin-top: 0;
+  color: #526176;
+}
+ 
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+ 
+.activity-card {
+  padding: 1.5rem;
+  background: #ffffff;
+  border: 1px solid #dce4ef;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 14px rgb(20 43 74 / 7%);
+}
+ 
+.card-number {
+  color: #1559b7;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+ 
+.activity-card h3 {
+  margin: 0.4rem 0;
+}
+ 
+.activity-card p {
+  margin-bottom: 0;
+}
+ 
+footer {
+  padding: 1.25rem 1rem;
+  text-align: center;
+  color: #ffffff;
+  background: #142b4a;
+}
+ 
+footer p {
+  margin: 0;
+}
+ 
+@media (max-width: 650px) {
+  .header-inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+ 
+  nav {
+    gap: 0.8rem;
+  }
+ 
+  .hero {
+    padding: 3rem 1rem;
+  }
+ 
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
